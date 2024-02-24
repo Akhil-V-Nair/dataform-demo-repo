@@ -3,7 +3,7 @@ config {
   description: "This table calculates AVG from the source view",
   name: "results"
 }
-SELECT * FROM ${ref("agg_1")} 
+SELECT * FROM ${ref("agg_1")} as stats
 UNION ALL
 SELECT * FROM ${ref("agg_2")} 
 UNION ALL
