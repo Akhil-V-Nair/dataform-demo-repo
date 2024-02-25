@@ -3,7 +3,7 @@ config {
     name: "source",
     assertions: {
         uniqueKey: ["fruit"],
-        rowConditions:[
+        rowConditions: [
             'count > 0',
         ]
     }
